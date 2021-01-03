@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\CMakeFiles\1dabf6c2d8c42d20b40ba5d758c3aa79\SYNC_RESOURCE-Snake.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\CMakeFiles\SYNC_RESOURCE-Snake" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A39ADE2D-58C8-3EA2-8B39-6E4B9A5F9024}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

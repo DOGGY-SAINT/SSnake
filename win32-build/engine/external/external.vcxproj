@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|win32">
+      <Configuration>Release</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CCFEB455-9236-36A6-B586-549A4443A779}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>win32</Platform>
+    <ProjectName>external</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">external.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">external</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">external.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|win32'">external</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">external.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">external</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">external.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">external</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\recast\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\tinyxml2\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxhash\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxtea\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\edtaa3func\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\ConvertUTF\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\poly2tri\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\md5\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\unzip\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\Box2D\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\chipmunk\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\freetype2\include\win32\freetype2;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include\bullet;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\jpeg\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\openssl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\uv\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\webp\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\websockets\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\curl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\png\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\gles\include\OGLES;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\icon\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\MP3Decoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OggDecoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OpenalSoft\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\glfw3\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;LWS_WITH_LIBUV;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\recast\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\tinyxml2\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxhash\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxtea\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\edtaa3func\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\ConvertUTF\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\poly2tri\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\md5\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\unzip\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\Box2D\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\chipmunk\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\freetype2\include\win32\freetype2;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include\bullet;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\jpeg\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\openssl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\uv\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\webp\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\websockets\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\curl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\png\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\gles\include\OGLES;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\icon\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\MP3Decoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OggDecoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OpenalSoft\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\glfw3\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\recast\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\tinyxml2\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxhash\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxtea\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\edtaa3func\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\ConvertUTF\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\poly2tri\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\md5\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\unzip\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\Box2D\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\chipmunk\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\freetype2\include\win32\freetype2;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include\bullet;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\jpeg\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\openssl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\uv\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\webp\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\websockets\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\curl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\png\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\gles\include\OGLES;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\icon\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\MP3Decoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OggDecoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OpenalSoft\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\glfw3\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\recast\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\tinyxml2\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxhash\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxtea\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\edtaa3func\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\ConvertUTF\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\poly2tri\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\md5\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\unzip\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\Box2D\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\chipmunk\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\freetype2\include\win32\freetype2;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include\bullet;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\jpeg\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\openssl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\uv\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\webp\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\websockets\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\curl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\png\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\gles\include\OGLES;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\icon\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\MP3Decoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OggDecoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OpenalSoft\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\glfw3\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;LWS_WITH_LIBUV;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\recast\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\tinyxml2\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxhash\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxtea\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\edtaa3func\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\ConvertUTF\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\poly2tri\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\md5\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\unzip\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\Box2D\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\chipmunk\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\freetype2\include\win32\freetype2;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include\bullet;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\jpeg\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\openssl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\uv\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\webp\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\websockets\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\curl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\png\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\gles\include\OGLES;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\icon\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\MP3Decoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OggDecoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OpenalSoft\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\glfw3\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\recast\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\tinyxml2\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxhash\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxtea\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\edtaa3func\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\ConvertUTF\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\poly2tri\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\md5\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\unzip\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\Box2D\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\chipmunk\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\freetype2\include\win32\freetype2;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include\bullet;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\jpeg\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\openssl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\uv\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\webp\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\websockets\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\curl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\png\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\gles\include\OGLES;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\icon\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\MP3Decoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OggDecoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OpenalSoft\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\glfw3\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\recast\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\tinyxml2\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxhash\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxtea\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\edtaa3func\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\ConvertUTF\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\poly2tri\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\md5\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\unzip\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\Box2D\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\chipmunk\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\freetype2\include\win32\freetype2;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include\bullet;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\jpeg\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\openssl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\uv\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\webp\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\websockets\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\curl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\png\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\gles\include\OGLES;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\icon\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\MP3Decoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OggDecoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OpenalSoft\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\glfw3\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;LWS_WITH_LIBUV;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;LWS_WITH_LIBUV;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\recast\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\tinyxml2\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxhash\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxtea\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\edtaa3func\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\ConvertUTF\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\poly2tri\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\md5\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\unzip\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\Box2D\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\chipmunk\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\freetype2\include\win32\freetype2;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include\bullet;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\jpeg\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\openssl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\uv\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\webp\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\websockets\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\curl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\png\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\gles\include\OGLES;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\icon\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\MP3Decoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OggDecoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OpenalSoft\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\glfw3\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\recast\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\tinyxml2\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxhash\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxtea\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\edtaa3func\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\ConvertUTF\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\poly2tri\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\md5\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\unzip\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\Box2D\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\chipmunk\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\freetype2\include\win32\freetype2;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include\bullet;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\jpeg\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\openssl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\uv\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\webp\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\websockets\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\curl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\png\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\gles\include\OGLES;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\icon\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\MP3Decoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OggDecoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OpenalSoft\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\glfw3\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\recast\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\tinyxml2\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxhash\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxtea\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\edtaa3func\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\ConvertUTF\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\poly2tri\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\md5\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\unzip\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\Box2D\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\chipmunk\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\freetype2\include\win32\freetype2;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include\bullet;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\jpeg\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\openssl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\uv\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\webp\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\websockets\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\curl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\png\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\gles\include\OGLES;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\icon\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\MP3Decoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OggDecoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OpenalSoft\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\glfw3\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;LWS_WITH_LIBUV;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;LWS_WITH_LIBUV;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\recast\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\tinyxml2\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxhash\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxtea\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\edtaa3func\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\ConvertUTF\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\poly2tri\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\md5\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\unzip\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\Box2D\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\chipmunk\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\freetype2\include\win32\freetype2;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include\bullet;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\jpeg\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\openssl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\uv\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\webp\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\websockets\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\curl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\png\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\gles\include\OGLES;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\icon\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\MP3Decoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OggDecoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OpenalSoft\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\glfw3\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\recast\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\tinyxml2\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxhash\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxtea\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\edtaa3func\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\ConvertUTF\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\poly2tri\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\md5\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\unzip\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\Box2D\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\chipmunk\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\freetype2\include\win32\freetype2;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include\bullet;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\jpeg\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\openssl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\uv\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\webp\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\websockets\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\curl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\png\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\gles\include\OGLES;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\icon\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\MP3Decoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OggDecoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OpenalSoft\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\glfw3\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+E:\CMake\bin\cmake.exe -SE:/storage/cocos2dx_game/DataStructure/ttttt/Snake -BE:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build --check-stamp-file E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/engine/external/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+E:\CMake\bin\cmake.exe -SE:/storage/cocos2dx_game/DataStructure/ttttt/Snake -BE:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build --check-stamp-file E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/engine/external/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+E:\CMake\bin\cmake.exe -SE:/storage/cocos2dx_game/DataStructure/ttttt/Snake -BE:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build --check-stamp-file E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/engine/external/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+E:\CMake\bin\cmake.exe -SE:/storage/cocos2dx_game/DataStructure/ttttt/Snake -BE:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build --check-stamp-file E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/engine/external/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\empty.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\ZERO_CHECK.vcxproj">
+      <Project>{E4BCD600-3ECC-3645-A5C2-C7E8A77783C5}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{29ADA611-CC4B-3426-849D-3969A2D4E003}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{C3B6D2AD-0C3F-3C6C-85D3-FB0D7E3B52B2}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{C2C8EFC2-918A-3171-AD63-6D5347BCC793}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\md5\ext_md5.vcxproj">
+      <Project>{80E46C45-8256-360D-ACF5-986655B4A7C6}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{294E8E37-F71D-3B87-A6CC-3E2B9C2C89E8}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\recast\ext_recast.vcxproj">
+      <Project>{E802F319-643D-3C8F-BE67-B22F79B9D257}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{2E64BF2E-AFC6-3D41-91A2-E605E73C1667}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{F229C5BF-2981-3C4D-B7EC-32D39253C6B3}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{96A4D273-CEAD-3FF6-8E36-B4F57F8F0265}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{0D4EAB3C-B3B7-38B9-B69D-C150E8AA8C2E}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

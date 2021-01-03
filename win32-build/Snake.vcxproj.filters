@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Classes\AppDelegate.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\proj.win32\main.cpp">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\precheader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Food\Food.cpp">
+      <Filter>Source Files\Classes\Food</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\HelloWorldScene.cpp">
+      <Filter>Source Files\Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\PauseScene.cpp">
+      <Filter>Source Files\Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\PlayScene.cpp">
+      <Filter>Source Files\Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Snake\Snake.cpp">
+      <Filter>Source Files\Classes\Snake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Snake\SNode.cpp">
+      <Filter>Source Files\Classes\Snake</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Classes\AppDelegate.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\proj.win32\main.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\proj.win32\resource.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Resources\CloseNormal.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Resources\CloseSelected.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Resources\HelloWorld.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Resources\fonts\Marker Felt.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Resources\fonts\arial.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Resources\res\.gitkeep">
+      <Filter>Resources\res</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Component\Constant.h">
+      <Filter>Source Files\Classes\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Component\MyList.h">
+      <Filter>Source Files\Classes\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Food\Food.h">
+      <Filter>Source Files\Classes\Food</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\HelloWorldScene.h">
+      <Filter>Source Files\Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\PauseScene.h">
+      <Filter>Source Files\Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\PlayScene.h">
+      <Filter>Source Files\Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Snake\Snake.h">
+      <Filter>Source Files\Classes\Snake</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Snake\SNode.h">
+      <Filter>Source Files\Classes\Snake</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\proj.win32\game.rc">
+      <Filter>Source Files\proj.win32</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{324762B2-49A2-3EC0-A7D6-ADDB273FE61A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\fonts">
+      <UniqueIdentifier>{A428038C-64DC-3FCC-A33C-FD2108C532AF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\res">
+      <UniqueIdentifier>{EEC1BBA1-0BA8-353D-8471-89166307D647}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B677453A-D25D-3E01-B67C-0A9BF1043B6D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes">
+      <UniqueIdentifier>{86E05ED9-C9AB-351E-896C-83D628F9B568}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\proj.win32">
+      <UniqueIdentifier>{EA9DF301-7387-3F86-A7EA-B7046F9C5CCB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Component">
+      <UniqueIdentifier>{edc744e1-3b14-4c9d-8872-d24938bc7f8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Food">
+      <UniqueIdentifier>{e184199a-729f-4be3-bcbe-a1cd157a4250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Snake">
+      <UniqueIdentifier>{2e2cdd30-c6f3-4f91-b422-99e566959d1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Scene">
+      <UniqueIdentifier>{085b7f0b-15bb-4019-a64b-7365f0bd13e0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

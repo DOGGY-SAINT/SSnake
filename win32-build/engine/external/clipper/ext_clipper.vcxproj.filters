@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\clipper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B677453A-D25D-3E01-B67C-0A9BF1043B6D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

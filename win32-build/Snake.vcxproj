@@ -1,0 +1,897 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|win32">
+      <Configuration>Release</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F275A7E4-04F8-3B55-9F51-5B1ADDDEE745}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>win32</Platform>
+    <ProjectName>Snake</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\bin\Snake\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Snake.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Snake</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\bin\Snake\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Snake.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Snake</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\bin\Snake\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Snake.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Snake</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\bin\Snake\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Snake.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Snake</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Classes;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\audio\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\extensions;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\platform;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\editor-support;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\base;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\platform\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\recast\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\tinyxml2\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxhash\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxtea\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\edtaa3func\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\ConvertUTF\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\poly2tri\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\md5\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\unzip\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\Box2D\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\chipmunk\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\freetype2\include\win32\freetype2;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include\bullet;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\jpeg\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\openssl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\uv\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\webp\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\websockets\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\curl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\png\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\gles\include\OGLES;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\icon\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\MP3Decoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OggDecoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OpenalSoft\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\glfw3\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Classes;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\audio\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\extensions;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\platform;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\editor-support;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\base;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\platform\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\recast\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\tinyxml2\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxhash\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxtea\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\edtaa3func\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\ConvertUTF\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\poly2tri\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\md5\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\unzip\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\Box2D\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\chipmunk\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\freetype2\include\win32\freetype2;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include\bullet;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\jpeg\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\openssl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\uv\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\webp\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\websockets\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\curl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\png\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\gles\include\OGLES;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\icon\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\MP3Decoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OggDecoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OpenalSoft\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\glfw3\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Classes;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\audio\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\extensions;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\platform;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\editor-support;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\base;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\platform\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\recast\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\tinyxml2\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxhash\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxtea\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\edtaa3func\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\ConvertUTF\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\poly2tri\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\md5\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\unzip\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\Box2D\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\chipmunk\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\freetype2\include\win32\freetype2;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include\bullet;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\jpeg\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\openssl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\uv\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\webp\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\websockets\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\curl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\png\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\gles\include\OGLES;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\icon\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\MP3Decoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OggDecoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OpenalSoft\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\glfw3\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Debug/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Debug/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/uv/prebuilt/win32/uv.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Debug/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/websockets/prebuilt/win32/websockets.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Debug/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/curl/prebuilt/win32/libcurl.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Debug/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Debug/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Debug/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Debug/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Debug/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Debug/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Debug/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Debug/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Debug/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Debug\cocos2d.lib;lib\Debug\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\debug\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\debug-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Debug\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\debug\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Debug\ext_tinyxml2.lib;lib\Debug\ext_xxhash.lib;lib\Debug\ext_xxtea.lib;lib\Debug\ext_clipper.lib;lib\Debug\ext_edtaa3func.lib;lib\Debug\ext_convertUTF.lib;lib\Debug\ext_poly2tri.lib;lib\Debug\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Debug\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/Debug/Snake.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Debug/Snake.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Classes;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\audio\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\extensions;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\platform;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\editor-support;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\base;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\platform\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\recast\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\tinyxml2\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxhash\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxtea\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\edtaa3func\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\ConvertUTF\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\poly2tri\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\md5\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\unzip\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\Box2D\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\chipmunk\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\freetype2\include\win32\freetype2;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include\bullet;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\jpeg\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\openssl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\uv\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\webp\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\websockets\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\curl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\png\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\gles\include\OGLES;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\icon\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\MP3Decoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OggDecoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OpenalSoft\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\glfw3\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Classes;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\audio\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\extensions;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\platform;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\editor-support;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\base;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\platform\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\recast\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\tinyxml2\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxhash\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxtea\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\edtaa3func\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\ConvertUTF\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\poly2tri\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\md5\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\unzip\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\Box2D\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\chipmunk\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\freetype2\include\win32\freetype2;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include\bullet;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\jpeg\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\openssl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\uv\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\webp\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\websockets\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\curl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\png\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\gles\include\OGLES;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\icon\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\MP3Decoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OggDecoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OpenalSoft\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\glfw3\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Classes;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\audio\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\extensions;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\platform;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\editor-support;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\base;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\platform\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\recast\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\tinyxml2\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxhash\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxtea\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\edtaa3func\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\ConvertUTF\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\poly2tri\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\md5\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\unzip\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\Box2D\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\chipmunk\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\freetype2\include\win32\freetype2;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include\bullet;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\jpeg\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\openssl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\uv\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\webp\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\websockets\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\curl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\png\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\gles\include\OGLES;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\icon\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\MP3Decoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OggDecoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OpenalSoft\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\glfw3\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Release/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Release/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/uv/prebuilt/win32/uv.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Release/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/websockets/prebuilt/win32/websockets.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Release/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/curl/prebuilt/win32/libcurl.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Release/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Release/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Release/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Release/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Release/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Release/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Release/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Release/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Release/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Release\cocos2d.lib;lib\Release\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Release\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Release\ext_tinyxml2.lib;lib\Release\ext_xxhash.lib;lib\Release\ext_xxtea.lib;lib\Release\ext_clipper.lib;lib\Release\ext_edtaa3func.lib;lib\Release\ext_convertUTF.lib;lib\Release\ext_poly2tri.lib;lib\Release\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Release\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/Release/Snake.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/Release/Snake.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Classes;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\audio\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\extensions;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\platform;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\editor-support;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\base;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\platform\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\recast\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\tinyxml2\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxhash\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxtea\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\edtaa3func\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\ConvertUTF\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\poly2tri\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\md5\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\unzip\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\Box2D\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\chipmunk\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\freetype2\include\win32\freetype2;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include\bullet;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\jpeg\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\openssl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\uv\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\webp\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\websockets\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\curl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\png\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\gles\include\OGLES;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\icon\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\MP3Decoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OggDecoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OpenalSoft\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\glfw3\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Classes;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\audio\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\extensions;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\platform;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\editor-support;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\base;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\platform\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\recast\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\tinyxml2\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxhash\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxtea\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\edtaa3func\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\ConvertUTF\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\poly2tri\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\md5\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\unzip\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\Box2D\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\chipmunk\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\freetype2\include\win32\freetype2;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include\bullet;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\jpeg\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\openssl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\uv\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\webp\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\websockets\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\curl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\png\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\gles\include\OGLES;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\icon\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\MP3Decoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OggDecoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OpenalSoft\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\glfw3\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Classes;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\audio\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\extensions;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\platform;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\editor-support;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\base;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\platform\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\recast\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\tinyxml2\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxhash\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxtea\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\edtaa3func\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\ConvertUTF\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\poly2tri\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\md5\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\unzip\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\Box2D\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\chipmunk\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\freetype2\include\win32\freetype2;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include\bullet;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\jpeg\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\openssl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\uv\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\webp\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\websockets\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\curl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\png\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\gles\include\OGLES;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\icon\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\MP3Decoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OggDecoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OpenalSoft\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\glfw3\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/MinSizeRel/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/MinSizeRel/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/uv/prebuilt/win32/uv.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/MinSizeRel/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/websockets/prebuilt/win32/websockets.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/MinSizeRel/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/curl/prebuilt/win32/libcurl.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/MinSizeRel/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/MinSizeRel/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/MinSizeRel/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/MinSizeRel/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/MinSizeRel/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/MinSizeRel/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/MinSizeRel/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/MinSizeRel/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/MinSizeRel/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\MinSizeRel\cocos2d.lib;lib\MinSizeRel\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\MinSizeRel\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\MinSizeRel\ext_tinyxml2.lib;lib\MinSizeRel\ext_xxhash.lib;lib\MinSizeRel\ext_xxtea.lib;lib\MinSizeRel\ext_clipper.lib;lib\MinSizeRel\ext_edtaa3func.lib;lib\MinSizeRel\ext_convertUTF.lib;lib\MinSizeRel\ext_poly2tri.lib;lib\MinSizeRel\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\MinSizeRel\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/MinSizeRel/Snake.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/MinSizeRel/Snake.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Classes;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\audio\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\extensions;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\platform;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\editor-support;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\base;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\platform\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\recast\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\tinyxml2\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxhash\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxtea\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\edtaa3func\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\ConvertUTF\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\poly2tri\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\md5\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\unzip\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\Box2D\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\chipmunk\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\freetype2\include\win32\freetype2;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include\bullet;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\jpeg\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\openssl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\uv\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\webp\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\websockets\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\curl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\png\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\gles\include\OGLES;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\icon\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\MP3Decoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OggDecoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OpenalSoft\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\glfw3\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Classes;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\audio\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\extensions;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\platform;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\editor-support;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\base;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\platform\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\recast\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\tinyxml2\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxhash\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxtea\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\edtaa3func\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\ConvertUTF\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\poly2tri\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\md5\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\unzip\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\Box2D\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\chipmunk\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\freetype2\include\win32\freetype2;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include\bullet;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\jpeg\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\openssl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\uv\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\webp\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\websockets\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\curl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\png\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\gles\include\OGLES;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\icon\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\MP3Decoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OggDecoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OpenalSoft\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\glfw3\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Classes;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\audio\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\extensions;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\platform;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\editor-support;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\base;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\platform\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\recast\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\tinyxml2\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxhash\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\xxtea\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\clipper\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\edtaa3func\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\ConvertUTF\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\poly2tri\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\md5\..;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\unzip\.;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\Box2D\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\chipmunk\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\freetype2\include\win32\freetype2;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\bullet\include\bullet;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\jpeg\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\openssl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\uv\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\webp\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\websockets\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\curl\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\png\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\gles\include\OGLES;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\icon\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\MP3Decoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OggDecoder\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\win32-specific\OpenalSoft\include;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\glfw3\include\win32;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/RelWithDebInfo/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/RelWithDebInfo/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/uv/prebuilt/win32/uv.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/RelWithDebInfo/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/websockets/prebuilt/win32/websockets.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/RelWithDebInfo/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/curl/prebuilt/win32/libcurl.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/RelWithDebInfo/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/RelWithDebInfo/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/RelWithDebInfo/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/RelWithDebInfo/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/RelWithDebInfo/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/RelWithDebInfo/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/RelWithDebInfo/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/RelWithDebInfo/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\CMake\bin\cmake.exe -E copy_if_different E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/RelWithDebInfo/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\RelWithDebInfo\cocos2d.lib;lib\RelWithDebInfo\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\RelWithDebInfo\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\RelWithDebInfo\ext_tinyxml2.lib;lib\RelWithDebInfo\ext_xxhash.lib;lib\RelWithDebInfo\ext_xxtea.lib;lib\RelWithDebInfo\ext_clipper.lib;lib\RelWithDebInfo\ext_edtaa3func.lib;lib\RelWithDebInfo\ext_convertUTF.lib;lib\RelWithDebInfo\ext_poly2tri.lib;lib\RelWithDebInfo\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\RelWithDebInfo\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/RelWithDebInfo/Snake.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/bin/Snake/RelWithDebInfo/Snake.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+E:\CMake\bin\cmake.exe -SE:/storage/cocos2dx_game/DataStructure/ttttt/Snake -BE:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build --check-stamp-file E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">E:\CMake\share\cmake-3.19\Modules\CMakeCCompiler.cmake.in;E:\CMake\share\cmake-3.19\Modules\CMakeCCompilerABI.c;E:\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeCXXCompiler.cmake.in;E:\CMake\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp;E:\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineCCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineCXXCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineCompileFeatures.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerABI.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineRCCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineSystem.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeParseArguments.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeRCCompiler.cmake.in;E:\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeSystem.cmake.in;E:\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeTestCCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeTestCXXCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeTestCompilerCommon.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeTestRCCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\TI-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CompilerId\VS-10.vcxproj.in;E:\CMake\share\cmake-3.19\Modules\Internal\FeatureTesting.cmake;E:\CMake\share\cmake-3.19\Modules\Platform\Windows-Determine-CXX.cmake;E:\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;E:\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;E:\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;E:\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;E:\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cmake\Modules\CocosBuildSet.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cmake\Modules\CocosConfigDefine.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cmake\Modules\CocosConfigDepend.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\CMakeFiles\3.19.2\CMakeCCompiler.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\CMakeFiles\3.19.2\CMakeCXXCompiler.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\CMakeFiles\3.19.2\CMakeRCCompiler.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\CMakeFiles\3.19.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+E:\CMake\bin\cmake.exe -SE:/storage/cocos2dx_game/DataStructure/ttttt/Snake -BE:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build --check-stamp-file E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">E:\CMake\share\cmake-3.19\Modules\CMakeCCompiler.cmake.in;E:\CMake\share\cmake-3.19\Modules\CMakeCCompilerABI.c;E:\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeCXXCompiler.cmake.in;E:\CMake\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp;E:\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineCCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineCXXCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineCompileFeatures.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerABI.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineRCCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineSystem.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeParseArguments.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeRCCompiler.cmake.in;E:\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeSystem.cmake.in;E:\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeTestCCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeTestCXXCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeTestCompilerCommon.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeTestRCCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\TI-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CompilerId\VS-10.vcxproj.in;E:\CMake\share\cmake-3.19\Modules\Internal\FeatureTesting.cmake;E:\CMake\share\cmake-3.19\Modules\Platform\Windows-Determine-CXX.cmake;E:\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;E:\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;E:\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;E:\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;E:\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cmake\Modules\CocosBuildSet.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cmake\Modules\CocosConfigDefine.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cmake\Modules\CocosConfigDepend.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\CMakeFiles\3.19.2\CMakeCCompiler.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\CMakeFiles\3.19.2\CMakeCXXCompiler.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\CMakeFiles\3.19.2\CMakeRCCompiler.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\CMakeFiles\3.19.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+E:\CMake\bin\cmake.exe -SE:/storage/cocos2dx_game/DataStructure/ttttt/Snake -BE:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build --check-stamp-file E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">E:\CMake\share\cmake-3.19\Modules\CMakeCCompiler.cmake.in;E:\CMake\share\cmake-3.19\Modules\CMakeCCompilerABI.c;E:\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeCXXCompiler.cmake.in;E:\CMake\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp;E:\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineCCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineCXXCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineCompileFeatures.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerABI.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineRCCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineSystem.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeParseArguments.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeRCCompiler.cmake.in;E:\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeSystem.cmake.in;E:\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeTestCCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeTestCXXCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeTestCompilerCommon.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeTestRCCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\TI-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CompilerId\VS-10.vcxproj.in;E:\CMake\share\cmake-3.19\Modules\Internal\FeatureTesting.cmake;E:\CMake\share\cmake-3.19\Modules\Platform\Windows-Determine-CXX.cmake;E:\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;E:\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;E:\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;E:\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;E:\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cmake\Modules\CocosBuildSet.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cmake\Modules\CocosConfigDefine.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cmake\Modules\CocosConfigDepend.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\CMakeFiles\3.19.2\CMakeCCompiler.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\CMakeFiles\3.19.2\CMakeCXXCompiler.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\CMakeFiles\3.19.2\CMakeRCCompiler.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\CMakeFiles\3.19.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+E:\CMake\bin\cmake.exe -SE:/storage/cocos2dx_game/DataStructure/ttttt/Snake -BE:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build --check-stamp-file E:/storage/cocos2dx_game/DataStructure/ttttt/Snake/win32-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">E:\CMake\share\cmake-3.19\Modules\CMakeCCompiler.cmake.in;E:\CMake\share\cmake-3.19\Modules\CMakeCCompilerABI.c;E:\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeCXXCompiler.cmake.in;E:\CMake\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp;E:\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineCCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineCXXCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineCompileFeatures.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerABI.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineRCCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeDetermineSystem.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeParseArguments.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeRCCompiler.cmake.in;E:\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeSystem.cmake.in;E:\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeTestCCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeTestCXXCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeTestCompilerCommon.cmake;E:\CMake\share\cmake-3.19\Modules\CMakeTestRCCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\TI-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;E:\CMake\share\cmake-3.19\Modules\CompilerId\VS-10.vcxproj.in;E:\CMake\share\cmake-3.19\Modules\Internal\FeatureTesting.cmake;E:\CMake\share\cmake-3.19\Modules\Platform\Windows-Determine-CXX.cmake;E:\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;E:\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;E:\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;E:\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;E:\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cmake\Modules\CocosBuildSet.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cmake\Modules\CocosConfigDefine.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cmake\Modules\CocosConfigDepend.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\CMakeFiles\3.19.2\CMakeCCompiler.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\CMakeFiles\3.19.2\CMakeCXXCompiler.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\CMakeFiles\3.19.2\CMakeRCCompiler.cmake;E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\CMakeFiles\3.19.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\Component\Constant.h" />
+    <ClInclude Include="..\Classes\Component\MyList.h" />
+    <ClInclude Include="..\Classes\Food\Food.h" />
+    <ClInclude Include="..\Classes\Scene\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\Scene\PauseScene.h" />
+    <ClInclude Include="..\Classes\Scene\PlayScene.h" />
+    <ClInclude Include="..\Classes\Snake\Snake.h" />
+    <ClInclude Include="..\Classes\Snake\SNode.h" />
+    <ClInclude Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Classes\AppDelegate.h" />
+    <ClInclude Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\proj.win32\main.h" />
+    <ClInclude Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\proj.win32\resource.h" />
+    <ClCompile Include="..\Classes\Food\Food.cpp" />
+    <ClCompile Include="..\Classes\Scene\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\Scene\PauseScene.cpp" />
+    <ClCompile Include="..\Classes\Scene\PlayScene.cpp" />
+    <ClCompile Include="..\Classes\Snake\Snake.cpp" />
+    <ClCompile Include="..\Classes\Snake\SNode.cpp" />
+    <ClCompile Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Classes\AppDelegate.cpp" />
+    <ClCompile Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\proj.win32\main.cpp" />
+    <ResourceCompile Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\proj.win32\game.rc" />
+    <ClInclude Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Resources\CloseNormal.png" />
+    <ClInclude Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Resources\CloseSelected.png" />
+    <ClInclude Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Resources\HelloWorld.png" />
+    <ClInclude Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Resources\fonts\Marker Felt.ttf" />
+    <ClInclude Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Resources\fonts\arial.ttf" />
+    <ClInclude Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\Resources\res\.gitkeep" />
+    <ClCompile Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\cocos2d\cocos\precheader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\ZERO_CHECK.vcxproj">
+      <Project>{E4BCD600-3ECC-3645-A5C2-C7E8A77783C5}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\SYNC_RESOURCE-Snake.vcxproj">
+      <Project>{4D8D8D76-140C-3562-84C0-64FDA85DED23}</Project>
+      <Name>SYNC_RESOURCE-Snake</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{EBCD4242-54F6-3948-BA66-A569D9628719}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{29ADA611-CC4B-3426-849D-3969A2D4E003}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{C3B6D2AD-0C3F-3C6C-85D3-FB0D7E3B52B2}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{C2C8EFC2-918A-3171-AD63-6D5347BCC793}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\md5\ext_md5.vcxproj">
+      <Project>{80E46C45-8256-360D-ACF5-986655B4A7C6}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{294E8E37-F71D-3B87-A6CC-3E2B9C2C89E8}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\recast\ext_recast.vcxproj">
+      <Project>{E802F319-643D-3C8F-BE67-B22F79B9D257}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{2E64BF2E-AFC6-3D41-91A2-E605E73C1667}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{F229C5BF-2981-3C4D-B7EC-32D39253C6B3}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{96A4D273-CEAD-3FF6-8E36-B4F57F8F0265}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{0D4EAB3C-B3B7-38B9-B69D-C150E8AA8C2E}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\storage\cocos2dx_game\DataStructure\ttttt\Snake\win32-build\engine\external\external.vcxproj">
+      <Project>{CCFEB455-9236-36A6-B586-549A4443A779}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
